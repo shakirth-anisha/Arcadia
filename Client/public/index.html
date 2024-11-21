@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <title>Fuzzle</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="battle_img_html" style="opacity: 0;" class="battle_img_html">
+            <div id="winlose_screen" class="winlose_screen">
+                <div id="winlose_screen_text" style="background-color: rgba(255, 255, 255, 0.9); padding:80px; border-radius:20px; color:black"></div>
+            </div>
+            <div id="battle_dialog"  class="battle_dialog"></div>
+            <div id="health_bar_1" class="health_bar_bg" style="top: 540px; left: 960px;">
+                <h3 id="player_name_health_bar">Ember</h3>
+                <div id="health_bar_bg_1" class="health_bar" style="background-color: #ccc;"></div>
+                <div id="health_1" class="health_bar" style="width: 668px;"></div>
+            </div>
+            <div id="health_bar_2" class="health_bar_bg" style="top: 50px; left: 50px;">
+                <h3 id="enemy_name_health_bar">Dragon</h3>
+                <div id="health_bar_bg_2" class="health_bar" style="background-color: #ccc;"></div>
+                <div id="health_2" class="health_bar" style="width: 668px;"></div>
+            </div>
+            <div id="attack_tab" class="attack_tab">
+                <div id="attack_info" class="attack_info">
+                    <h1 id="attack_info_text" style="font-size: 25px;">
+                        AttackInfo
+                    </h1>
+                </div>
+                <div id="attack_options" class="attack_options">
+                    <button id="attack_1" class="attack_op">Tackle</button>
+                    <button id="attack_2" class="attack_op">Fireball</button>
+                    <button id="attack_3" class="attack_op">Heal</button>
+                    <button id="attack_4" class="attack_op">Gamble</button>
+                </div>
+            </div>
+            <img id="Ember" class="onbattle" style="opacity: 1; top:360px; left:400px" src="./Ember/ember1.png"> 
+            <img id="Dragon" class="onbattle" style="opacity: 1; top:170px; left:1340px; width: 150px; height:150px" src="./enemy_dino1.png"> 
+            <img id="fireball" class="onbattle" style="opacity: 0;" src="./Fire/fire1.png"> 
+            <img id="heal_img" class="onbattle" style="opacity: 0;" src="./Fire/heal.png" style="top:360px; left:400px"> 
+            <img id="battle" class="battle_img_html" style="opacity: 1;" src="./battleBackground.png"> 
+        </div>
+        <div id="exp" class="exp">0</div>
+        <div id="battle_ani" class="battle_ani"> </div>
+        <div id="root" class="canvas"></div>
+
+        <script>    
+            let enemies = ["Dragon", "Axolotl", "Reptile", "Dino", "Racoon"];
+            let randomEnemy = enemies[Math.floor(Math.random() * enemies.length)];
+            let enemy = [], ember = [];
+            for (i=1; i<=4; i++){
+                enemy.push(`Enemy/${randomEnemy}/enemy_${randomEnemy}${i}.png`)
+                ember.push("Ember/player_Ember"+i+".png")
+            }
+            document.getElementById("enemy_name_health_bar").innerHTML = randomEnemy;
+            let index = 0
+        
+            setInterval(() => {
+                index = (index + 1) % enemy.length;
+                document.getElementById("Dragon").src = enemy[index];
+                document.getElementById("Ember").src = ember[index];
+            }, 100);
+          </script>
+    </body>
+</html>
+        <!--
+            This HTML file is a template.
+            If you open it directly in the browser, you will see an empty page.
+
+            You can add webfonts, meta tags, or analytics to this file.
+            The build step will place the bundled scripts into the <body> tag.
+
+            To begin the development, run `npm start` or `yarn start`.
+            To create a production bundle, use `npm run build` or `yarn build`.
+        -->

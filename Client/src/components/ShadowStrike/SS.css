@@ -1,0 +1,92 @@
+* {
+  image-rendering: pixelated;
+}
+
+/* div {
+  background-color: #282c34;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+} */
+
+.Game2 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.playerHP{
+  position: absolute;
+  background: rgb(120, 123, 233);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.timer{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  border-radius: 30px;
+  background-color: black;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  border: 4px solid white;
+}
+.enemyHP{
+  position: absolute;
+  background: rgb(120, 123, 233);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.result{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 46px;
+  position: absolute;
+  border-style: none;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  top: 340px;
+  right: 760px;
+  bottom: 520px;
+  left: 760px;
+  display: none;
+}
+.replay{
+  position: absolute;
+  align-items: center;
+  border-style: none;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  top: 500px;
+  right: 1000px;
+  bottom: 350px;
+  left: 680px;
+  display: none;
+}
+.replay_btn{
+  height: 350px;
+  width: 350px;
+  background: none;
+}
+.btn_img{
+  height: 350px;
+  width: 350px;
+  background: none;
+}

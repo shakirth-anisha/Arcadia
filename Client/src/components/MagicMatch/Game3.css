@@ -1,0 +1,122 @@
+.App-link {
+  color: #61dafb;
+}
+.App h1 {  
+  font-size: 70px;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+}
+
+.bg_img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mm_body{
+  margin: 0;
+  text-align: center;
+  background: #000;
+  color: azure;
+}
+
+.mm_button {
+  width: 500px;
+  height: 70px;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(5, 186, 126) 0%, rgb(5, 186, 126) 74%);
+  border: none;
+  z-index: 1;
+}
+.mm_button:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg, rgba(1, 134, 89, 0.582) 0%, rgb(5, 186, 126) 74%);
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5,
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1));
+  transition: all 0.3s ease;
+}
+.mm_button:hover {
+  color: #000;
+}
+.mm_button:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.mm_button:active {
+  top: 2px;
+}
+.cardGrid{
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 500px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 75px;
+  row-gap: 25px;
+}
+@keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  20%{
+    color:#4FC1E9;
+  }
+  40%{
+    color:#FFCE54;
+  }
+  60%{
+    color:#FC6E51;
+  }
+  80%{
+    color:#ED5565;
+  }
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-webkit-keyframes Color{
+  0%{
+    color:#A0D468;
+  }
+  20%{
+    color:#4FC1E9;
+  }
+  40%{
+    color:#FFCE54;
+  }
+  60%{
+    color:#FC6E51;
+  }
+  80%{
+    color:#ED5565;
+  }
+  100%{
+    color:#AC92EC;
+  }
+} 

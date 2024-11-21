@@ -1,0 +1,39 @@
+.home_navigator {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(92, 114, 163);
+    padding: 10px;
+    z-index: 100;
+}
+
+.nav_a:hover {
+    color: #232323;
+}
+
+.nav_a {
+    padding: 10px;
+    color: aliceblue;
+    height: 40px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.nav_a a {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav_a a:hover {
+    color: #232323;
+}
+
+.nav_a a:visited:hover {
+    color: #232323;
+}

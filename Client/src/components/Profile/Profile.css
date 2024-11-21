@@ -1,0 +1,39 @@
+.profile{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -5%;
+}
+.profile_info{
+    background: rgb(92, 114, 163);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+.logout_profile{
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 13px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #ed6a5e 0%, #ff88c0 50%, #ed6a5e 100%);    color: #fff;
+    width: 30%;
+    background-size: 200% 100%;
+    animation: gradient 3s ease infinite;
+}

@@ -1,0 +1,47 @@
+/* src/Home_page/Home.css */
+.credits-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.credits-title {
+    font-size: 3.5rem; 
+    font-weight: bold;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.credits-list {
+    background: rgb(92, 114, 163);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.credit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #000000;
+    box-shadow: 2px 4px 4px #0c0c0c8a;
+    padding: 30px 30px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.credit-work {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0c0c0c; 
+}
+
+.credit-name {
+    font-size: 1.2rem;
+    color: #232323;
+}

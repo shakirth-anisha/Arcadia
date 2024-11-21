@@ -1,0 +1,123 @@
+.bg_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.3;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.ttt-game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  .ttt-header {
+	font-size: 2rem;
+	margin-bottom: 20px;
+  }
+  
+  .ttt-start-popup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15%;
+	padding: 20px;
+	border: 2px solid #333;
+	background-color: rgba(0, 0, 0, 0.728);
+	border-radius: 10px;
+  }
+  
+  .ttt-popup-header {
+	padding: 20px;
+	font-size: 30px;
+	border-radius: 5px;
+	padding-left: 75px;
+	padding-right: 75px;
+  }
+
+  .ttt-start-popup input {
+	padding: 20px;
+	font-size: 1rem;
+	border-radius: 5px;
+	background-color: rgba(240, 248, 255, 0.577);
+	border: 2px solid #333;
+	margin: 10px;
+  }
+  
+  .ttt-start-button {
+	padding: 20px 150px;
+	font-size: 1.2rem;
+	margin: 30px;
+	background-color: #fac35e;
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .ttt-board {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(3, 200px);
+	gap: 20px;
+	max-width: max-content;
+	margin-top: 20px;
+  }
+  
+  .ttt-square {
+	width: 200px;
+	height: 200px;
+	font-size: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.728);
+	border: 1px solid #333;
+	cursor: pointer;
+  }
+  
+  .ttt-X {
+	color: #ff7050;
+  }
+  
+  .ttt-O {
+	color: #3ef769;
+  }
+  
+  .ttt-next {
+	font-size: 1.5rem;
+	margin: 30px;
+  }
+  
+  .ttt-winner {
+	font-size: 1.5rem;
+	color: #3ef769;
+	margin: 30px;
+  }
+  
+  .ttt-winner-line {
+	background-color: #3ef769;
+	color: #333;
+  }
+  
+  .ttt-play-again {
+	margin-top: 50px;
+	padding: 30px 40px;
+	font-size: 32px;
+	background-color: #FADA5E;
+	opacity: 0.75;
+	color: #333;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .ttt-play-again:hover {
+	opacity: 1;
+}
+  

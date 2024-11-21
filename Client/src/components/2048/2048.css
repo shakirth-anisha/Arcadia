@@ -1,0 +1,122 @@
+.bg_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.3;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title_2048 {
+    color: #F5F5F5;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 62px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #1A2E4F;
+}
+
+.game-board {
+    background: rgba(217, 229, 254, 0.25);
+    border-radius: 15px;
+    display: inline-block;
+    margin: 40px auto;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tile-row {
+    display: flex;
+    justify-content: center;
+}
+
+.tile {
+    background: #ECF0F1;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2C3E50;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 8px;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tile.empty-tile {
+    background: #D6D8DC;
+}
+.tile-2 { background: #FFC1CC; color: #FF1493; }
+.tile-4 { background: #DCC6E0; color: #800080; }
+.tile-8 {background: #D1C4E9; color: #4A148C; }
+.tile-16 { background: #FF69B4; color: #FFFFFF; }
+.tile-32 { background: #FFD700; color: #FFFFFF; }
+.tile-64 { background: #FF7F50; color: #FFFFFF; }
+.tile-128 { background: #FF4500; color: #FFFFFF; }
+.tile-256 { background: #32CD32; color: #FFFFFF; }
+.tile-512 { background: #40E0D0; color: #004D40; }
+.tile-1024 { background: #9B30FF; color: #FFFFFF; }
+.tile-2048 { background: #FFD700; color: #800080; }
+
+.score-board {
+    background: #ECF0F1;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.game-over {
+    background: rgba(0, 0, 0, 0.85);
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 670px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 36px;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-over h1 {
+    margin: 0 0 15px;
+    margin-top: 160px;
+    font-size: 40px;
+    color: #F5B041;
+    text-shadow: 1px 1px 3px #1A2E4F;
+}
+
+.game-over button {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-over button:hover {
+    background-color: #1565C0;
+    transform: scale(1.05);
+}

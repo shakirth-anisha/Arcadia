@@ -1,0 +1,70 @@
+.bg_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.app-container {
+    text-align: center;
+}
+
+.rps_title {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.choice-container {
+    margin-top: 1rem;
+}
+
+.vs-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vs-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.choice-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.vs-image{
+    background-color: rgba(149, 169, 210, 0.5);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5%;
+}
+
+.choice-button {
+    background-color: rgba(149, 169, 210, 0.5);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.result-container {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.result-text {
+    font-size: 45px;
+    font-weight: bold;
+}

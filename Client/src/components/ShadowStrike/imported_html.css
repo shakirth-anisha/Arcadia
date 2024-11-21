@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.replay {
+  margin-top: 20px;
+}
+
+.replay_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
