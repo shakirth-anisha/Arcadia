@@ -1,0 +1,52 @@
+cat > .gitignore <<EOL
+# Node.js dependencies
+Client/node_modules/
+Server/node_modules/
+
+# Logs
+*.log
+
+# Build outputs
+Client/build/
+Client/dist/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Environment files
+Client/.env
+Server/.env
+
+# Cache files
+Client/.cache/
+Server/.cache/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# OS-generated files
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+__MACOSX/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.iml
+
+# Generated directories
+Client/uploads/
+Server/uploads/
+
+# Dependency lock files (optional, but often included for specific projects)
+Client/package-lock.json
+Server/package-lock.json
+yarn.lock
+
+# Ignored scripts
+start.sh
+EOL
